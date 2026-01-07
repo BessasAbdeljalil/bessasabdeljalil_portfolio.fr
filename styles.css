@@ -31,6 +31,37 @@ header {
   font-size: 22px;
   color: #38bdf8;
 }
+/* STAGE BUBBLES */
+.stage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.stage-bubble {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  font-size: 22px;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+  box-shadow: 0 0 40px rgba(56,189,248,0.4);
+}
+
+.stage-bubble:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 0 80px rgba(99,102,241,0.8);
+}
 
 nav a {
   color: white;
