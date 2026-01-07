@@ -1,34 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  background: #0f172a;
-  color: #e5e7eb;
+  background: #0b0f19;
+  color: white;
 }
 
+/* NAVBAR */
 header {
-  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(15, 23, 42, 0.8);
+  background: rgba(11, 15, 25, 0.8);
   backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
 .logo {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 22px;
   color: #38bdf8;
 }
 
 nav a {
-  margin-left: 2
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  opacity: 1;
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 15px 40px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+}
+
+/* SECTIONS */
+section {
+  padding: 120px 10%;
+}
+
+.section-title {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid #1e293b;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #38bdf8;
+}
+
+.card h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* CONTACT */
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  opacity: 0.4;
+}
