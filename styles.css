@@ -181,9 +181,8 @@ footer {
   display: block;
   transition: transform 0.3s;
 }
-
-.card-link:hover .card {
-  transform: translateY(-10px);
-  border-color: #38bdf8;
-  box-shadow: 0 0 20px #38bdf8;
+.card-link:hover,
+.card-link:focus {
+  text-decoration: none; /* pas de soulignement au hover/focus */
+  color: inherit; /* garde la couleur héritée */
 }
