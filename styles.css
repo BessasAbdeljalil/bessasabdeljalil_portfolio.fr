@@ -175,10 +175,3 @@ footer {
   padding: 40px;
   opacity: 0.4;
 }
-/* FIX HEADER FIXED */
-body {
-  padding-top: 100px;
-}
-body {
-  background: red !important;
-}
