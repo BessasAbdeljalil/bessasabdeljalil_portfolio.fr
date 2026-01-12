@@ -21,12 +21,13 @@
 <section>
   <h2 class="section-title">Contact</h2>
 
-  <form>
-    <input type="text" placeholder="Nom">
-    <input type="email" placeholder="Email">
-    <textarea rows="5" placeholder="Message"></textarea>
-    <button class="btn">Envoyer</button>
-  </form>
+ <form action="send_mail.php" method="POST">
+  <input type="text" name="name" placeholder="Nom" required>
+  <input type="email" name="_replyto" placeholder="Email" required>
+  <textarea name="message" rows="5" placeholder="Message" required></textarea>
+  <button class="btn" type="submit">Envoyer</button>
+</form>
+
 </section>
 
 </body>
