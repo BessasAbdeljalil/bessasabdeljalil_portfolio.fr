@@ -175,3 +175,15 @@ footer {
   padding: 40px;
   opacity: 0.4;
 }
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.card-link:hover .card {
+  transform: translateY(-10px);
+  border-color: #38bdf8;
+  box-shadow: 0 0 20px #38bdf8;
+}
