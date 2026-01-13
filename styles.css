@@ -79,15 +79,15 @@ nav a:hover {
 
 /* HERO */
 .hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 50%; /* Ajuste cette valeur pour monter ou descendre */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
   text-align: center;
-  padding: 0 10%;
-  margin-top: -400px; /* remonte le texte de 250px */
-  position: relative;
   z-index: 10;
+  width: 100%;
+  max-width: 600px;
 }
 .hero > div {
   background: rgba(11, 15, 25, 0.7);
