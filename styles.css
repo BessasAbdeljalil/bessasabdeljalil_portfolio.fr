@@ -186,7 +186,7 @@ footer {
   text-decoration: none; /* pas de soulignement au hover/focus */
   color: inherit; /* garde la couleur héritée */
 }
-.sisr-pro {
+.hero-pro {
   height: 320px;
   background: url("Users\Moné\Pictures\Camera Roll\sisr.jpeg") center/cover no-repeat;
   position: relative;
@@ -196,7 +196,7 @@ footer {
 }
 
 /* Filtre sombre + fondu */
-.sisr-pro::after {
+.hero-pro::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -208,18 +208,18 @@ footer {
 }
 
 /* Contenu par-dessus l’image */
-.sisr-pro-content {
+.hero-pro-content {
   position: relative;
   z-index: 1;
   text-align: center;
 }
 
-.sisr-pro h1 {
+.hero-pro h1 {
   font-size: 42px;
   font-weight: 900;
 }
 
-.sisr-pro p {
+.hero-pro p {
   margin-top: 10px;
   opacity: 0.7;
   font-size: 18px;
