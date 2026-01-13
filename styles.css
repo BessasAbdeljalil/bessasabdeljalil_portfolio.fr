@@ -188,19 +188,16 @@ footer {
 }
 .top-banner {
   width: 100%;
-  height: 400px; /* ← ajuste ici */
-  background: url("sisr.jpeg") center/cover no-repeat;
+  height: 400px; /* tu peux ajuster la hauteur si tu veux */
+  background: url("sisr.jpeg") center center / cover no-repeat;
   position: relative;
 }
 
-/* Effet fondu élégant */
 .top-banner::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(11,15,25,0.2),
-    rgba(11,15,25,0.95)
-  );
+  background: linear-gradient(to bottom, rgba(11,15,25,0.2), rgba(11,15,25,0.95));
+  pointer-events: none;
 }
+
