@@ -85,7 +85,7 @@ nav a:hover {
   justify-content: center;
   text-align: center;
   padding: 0 10%;
-  margin-top: -150px; /* remonte le texte de 150px */
+  margin-top: -250px; /* remonte le texte de 250px */
   position: relative;
   z-index: 10;
 }
