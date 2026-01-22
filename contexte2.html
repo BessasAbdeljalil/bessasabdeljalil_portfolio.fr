@@ -30,5 +30,21 @@
     <h3>Localisation de l'entreprise</h3>
     <div id="map"></div>
   </section>
+  <script>
+  const latitude = 45.7573199;
+  const longitude = 4.8432090;
+
+  const map = L.map('map').setView([latitude, longitude], 16);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap'
+  }).addTo(map);
+
+  L.marker([latitude, longitude])
+    .addTo(map)
+    .bindPopup("Pompes Funèbres ESSALAM")
+    .openPopup();
+</script>
+
 </body>
 </html>
