@@ -214,4 +214,12 @@ footer {
     border-radius: 12px;
     margin-top: 20px;
 }
+.map-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #00c8ff;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
 
