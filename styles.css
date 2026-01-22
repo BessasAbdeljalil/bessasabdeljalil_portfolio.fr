@@ -208,4 +208,10 @@ footer {
   background: linear-gradient(to bottom, rgba(11,15,25,0.2), rgba(11,15,25,0.95));
   pointer-events: none;
 }
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+}
 
