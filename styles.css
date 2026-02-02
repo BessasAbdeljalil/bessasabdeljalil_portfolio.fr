@@ -228,4 +228,57 @@ footer {
     display: flex;
     justify-content: center;
 }
+/* Journal de stage */
+.journal {
+  max-width: 850px;
+  margin: 80px auto 0;
+  padding-left: 30px;
+  border-left: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.journal-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 28px;
+}
+
+.journal-entry {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 25px 30px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.journal-entry:hover {
+  transform: translateX(5px);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.journal-entry::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 30px;
+  width: 14px;
+  height: 14px;
+  background: #4da6ff;
+  border-radius: 50%;
+}
+
+.week {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #4da6ff;
+  font-size: 18px;
+}
+
+.journal-entry p {
+  color: #ccc;
+  line-height: 1.7;
+  font-size: 16px;
+}
 
