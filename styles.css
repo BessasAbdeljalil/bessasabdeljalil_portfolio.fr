@@ -282,3 +282,52 @@ footer {
   font-size: 16px;
 }
 
+/* Section Missions principales */
+.missions-section {
+  max-width: 900px;
+  margin: 0 auto 100px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.missions-intro {
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: #a0aec0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.missions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.mission-card {
+  background: #1e293b;
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.mission-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.7);
+}
+
+.mission-card h3 {
+  color: #38bdf8;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.mission-card p {
+  color: #cbd5e1;
+  font-size: 16px;
+  line-height: 1.5;
+}
