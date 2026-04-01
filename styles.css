@@ -331,8 +331,7 @@ footer {
   font-size: 16px;
   line-height: 1.5;
 }
-.mission-card,
-.mission-card * {
-  text-decoration: none !important;
-  color: inherit !important;
+a {
+  text-decoration: none;
+  color: inherit;
 }
