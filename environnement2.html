@@ -3,180 +3,231 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Environnement technique</title>
-  <link rel="stylesheet" href="styles.css" />
-
+  <title>Environnement technique | Abdeljalil.sisr</title>
+  
   <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #0b1120; /* Bleu très sombre comme la capture */
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    /* Header & Nav */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 5%;
+      background: rgba(11, 17, 32, 0.8);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* Container */
     .container {
       max-width: 1100px;
-      margin: auto;
-      padding: 20px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #f8fafc;
     }
 
     .intro {
-      font-size: 17px;
-      line-height: 1.6;
-      margin-bottom: 30px;
-      color: #333;
+      font-size: 16px;
+      color: #94a3b8;
+      max-width: 800px;
+      margin-bottom: 50px;
     }
 
+    /* Groupes de Sections */
     .section-block {
-      margin-bottom: 40px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-      color: #1f2d3d;
-    }
-
-    .tag {
-      display: inline-block;
-      margin-top: 8px;
-      margin-right: 5px;
-      padding: 5px 10px;
-      font-size: 12px;
-      background: #eef2f7;
-      border-radius: 20px;
+      margin-bottom: 60px;
     }
 
     .stage-title {
-      margin-top: 20px;
-      font-size: 22px;
-      color: #2c3e50;
+      font-size: 20px;
+      color: #38bdf8;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Grid & Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.03); /* Effet de transparence */
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 25px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.06);
+      border-color: #38bdf8;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #f1f5f9;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #94a3b8;
+      margin-bottom: 20px;
+    }
+
+    /* Tags */
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      background: rgba(56, 189, 248, 0.1);
+      color: #7dd3fc;
+      padding: 4px 12px;
+      font-size: 11px;
+      font-weight: 600;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
   </style>
 </head>
 <body>
+
   <header>
     <div class="logo">Abdeljalil.sisr</div>
     <nav>
-      <a href="tableau_compétence.html">Compétence</a>
-      <a href="index.html">Accueil</a>
-      <a href="about.html">À propos</a>
-      <a href="projects.html">Projets</a>
-      <a href="stage.html">Stage</a>
-      <a href="contact.html">Contact</a>
+      <a href="#">Compétence</a>
+      <a href="#">Accueil</a>
+      <a href="#">À propos</a>
+      <a href="#">Projets</a>
+      <a href="#">Stage</a>
+      <a href="#">Contact</a>
     </nav>
   </header>
 
   <div class="container">
+    <h2 class="section-title">🧰 Environnement technique global</h2>
+    <p class="intro">
+      Lors de mes deux périodes de stage, j’ai évolué dans un environnement informatique structuré autour de la virtualisation, des services réseau, de la sécurité et de la supervision.
+    </p>
 
-  <h2 class="section-title">🧰 Environnement technique global</h2>
+    <div class="section-block">
+      <h3 class="stage-title">📌 Infrastructure réseau segmentée</h3>
+      <div class="grid">
+        <div class="card">
+          <h3>🖥️ Système & AD</h3>
+          <p>Installation de Windows Server 2022 et mise en place d’un Active Directory pour centraliser la gestion.</p>
+          <div class="tag-container">
+            <span class="tag">Windows Server</span>
+            <span class="tag">Active Directory</span>
+            <span class="tag">DNS</span>
+          </div>
+        </div>
 
-  <p class="intro">
-    Lors de mes deux périodes de stage, j’ai évolué dans un environnement informatique structuré
-    autour de la virtualisation, des services réseau, de la sécurité et de la supervision.
-    J’ai participé à la mise en place, la gestion et la sécurisation d’une infrastructure complète.
-  </p>
+        <div class="card">
+          <h3>🔗 Réseau</h3>
+          <p>Configuration des switches Cisco en CLI et segmentation du réseau via VLAN pour sécuriser les flux.</p>
+          <div class="tag-container">
+            <span class="tag">Cisco</span>
+            <span class="tag">VLAN</span>
+            <span class="tag">CLI</span>
+          </div>
+        </div>
 
-  <!-- STAGE 1 -->
-  <div class="section-block">
-    <h3 class="stage-title">📌 Infrastructure réseau segmentée</h3>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>🖥️ Système & AD</h3>
-        <p>
-          Installation de Windows Server 2022 et mise en place d’un Active Directory
-          pour centraliser la gestion des utilisateurs.
-        </p>
-        <span class="tag">Windows Server</span>
-        <span class="tag">Active Directory</span>
-        <span class="tag">DNS</span>
+        <div class="card">
+          <h3>👥 Gestion utilisateurs</h3>
+          <p>Intégration des postes clients dans le domaine et gestion des droits d’accès via les groupes AD.</p>
+          <div class="tag-container">
+            <span class="tag">GPO</span>
+            <span class="tag">Sécurité</span>
+          </div>
+        </div>
       </div>
+    </div>
 
-      <div class="card">
-        <h3>🔗 Réseau</h3>
-        <p>
-          Configuration des switches Cisco en CLI et segmentation du réseau via VLAN
-          pour sécuriser les flux internes.
-        </p>
-        <span class="tag">Cisco</span>
-        <span class="tag">VLAN</span>
-        <span class="tag">CLI</span>
+    <div class="section-block">
+      <h3 class="stage-title">📌 Supervision & Sécurité</h3>
+      <div class="grid">
+        <div class="card">
+          <h3>📊 Supervision réseau</h3>
+          <p>Mise en place de supervision avec SNMP pour surveiller l’état des équipements et anticiper les pannes.</p>
+          <div class="tag-container">
+            <span class="tag">SNMP</span>
+            <span class="tag">Monitoring</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>🔐 Sécurité & VPN</h3>
+          <p>Déploiement d’un VPN RRAS pour sécuriser les connexions distantes avec chiffrement des flux.</p>
+          <div class="tag-container">
+            <span class="tag">VPN</span>
+            <span class="tag">RRAS</span>
+            <span class="tag">Sécurité</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>💾 Sauvegarde</h3>
+          <p>Mise en place de sauvegardes hybrides : NAS local + Cloud Google Storage.</p>
+          <div class="tag-container">
+            <span class="tag">NAS</span>
+            <span class="tag">Cloud</span>
+            <span class="tag">Backup</span>
+          </div>
+        </div>
       </div>
-
-      <div class="card">
-        <h3>👥 Gestion utilisateurs</h3>
-        <p>
-          Intégration des postes clients dans le domaine et gestion des droits d’accès
-          selon les groupes AD.
-        </p>
-        <span class="tag">GPO</span>
-        <span class="tag">Sécurité</span>
-      </div>
-
     </div>
   </div>
 
-  <!-- STAGE 2 -->
-  <div class="section-block">
-    <h3 class="stage-title">📌 Supervision & Sécurité</h3>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>📊 Supervision réseau</h3>
-        <p>
-          Mise en place de supervision avec SNMP pour surveiller l’état des équipements
-          et anticiper les incidents.
-        </p>
-        <span class="tag">SNMP</span>
-        <span class="tag">Monitoring</span>
-      </div>
-
-      <div class="card">
-        <h3>🔐 Sécurité & VPN</h3>
-        <p>
-          Déploiement d’un VPN RRAS pour sécuriser les connexions distantes avec chiffrement des flux.
-        </p>
-        <span class="tag">VPN</span>
-        <span class="tag">RRAS</span>
-        <span class="tag">Sécurité</span>
-      </div>
-
-      <div class="card">
-        <h3>💾 Sauvegarde</h3>
-        <p>
-          Mise en place de sauvegardes hybrides : NAS local + Cloud Google Storage
-          pour garantir la continuité de service.
-        </p>
-        <span class="tag">NAS</span>
-        <span class="tag">Cloud</span>
-        <span class="tag">Backup</span>
-      </div>
-
-      <div class="card">
-        <h3>📡 Optimisation</h3>
-        <p>
-          Amélioration de la politique de sécurité Active Directory et audit de bande passante
-          pour optimiser les performances réseau.
-        </p>
-        <span class="tag">AD</span>
-        <span class="tag">Audit</span>
-      </div>
-
-    </div>
-  </div>
-</div>
 </body>
 </html>
