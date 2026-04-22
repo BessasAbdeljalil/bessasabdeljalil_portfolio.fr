@@ -301,8 +301,9 @@ footer {
 
 .missions-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colonnes fixes */
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+  width: 100%;
 }
 
 .mission-card {
@@ -353,4 +354,6 @@ a {
 }
 .large {
   grid-column: 1 / -1;
+  width: 100%;
+  display: block;
 }
