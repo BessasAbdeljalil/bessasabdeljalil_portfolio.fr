@@ -353,4 +353,5 @@ a {
 }
 .large {
   grid-column: span 2;
+  text-align: center;
 }
